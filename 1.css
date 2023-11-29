@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.program-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.program-table th, .program-table td {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.program-table th {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.program-table td:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+.program-table td[colspan="2"] {
+    background-color: #3498db;
+    color: #ffffff;
+}
