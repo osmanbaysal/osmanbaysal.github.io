@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      background-color: blue;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    /* Yukarı aşağı gidip gelen efekti */
+    .box.moveUpDown {
+      animation-name: moveUpDown;
+    }
+
+    /* Büyüyüp küçülen efekti */
+    .box.scaleInOut {
+      animation-name: scaleInOut;
+    }
+
+    /* Rengi değişen efekti */
+    .box.changeColor {
+      animation-name: changeColor;
+    }
+
+    /* Transparan değeri artan ve azalan efekti */
+    .box.fadeInOut {
+      animation-name: fadeInOut;
+    }
+
+    /* Sağa sola giden efekti */
+    .box.moveRightLeft {
+      animation-name: moveRightLeft;
+    }
+
+    /* Dönen daire efekti */
+    .box.rotate {
+      animation-name: rotate;
+    }
+
+    @keyframes moveUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(100px);
+      }
+    }
+
+    @keyframes scaleInOut {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+    }
+
+    @keyframes changeColor {
+      0%, 100% {
+        background-color: blue;
+      }
+      50% {
+        background-color: red;
+      }
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes moveRightLeft {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100px);
+      }
+    }
+
+    @keyframes rotate {
+      0%, 100% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box moveUpDown"></div>
+  <div class="box scaleInOut"></div>
+  <div class="box changeColor"></div>
+  <div class="box fadeInOut"></div>
+  <div class="box moveRightLeft"></div>
+</body>
+</html>
