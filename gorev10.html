@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10x10 Kareler</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="500" height="500"></canvas>
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+
+    var kareBoyutu = 50;
+
+    function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    for (var i = 0; i < 10; i++) {
+        for (var j = 0; j < 10; j++) {
+            var renk = getRandomColor();
+
+            context.fillStyle = renk;
+            context.fillRect(i * kareBoyutu, j * kareBoyutu, kareBoyutu, kareBoyutu);
+
+            context.strokeStyle = "#000";
+            context.strokeRect(i * kareBoyutu, j * kareBoyutu, kareBoyutu, kareBoyutu);
+        }
+    }
+</script>
+
+</body>
+</html>
