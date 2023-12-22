@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body style="padding: 100px;">
+
+<p id="skor1"></p>
+<form>
+
+<label> 1. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
+<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
+<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
+<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
+<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+
+<label> 2. soru: HTML'de bir başlık (başlık etiketi) nasıl oluşturulur?</label><br>
+<input type="radio" name="s1" id="s1a" value="a"> a) <head> <br>
+<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
+<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
+<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+
+<label> 3. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
+<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
+<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
+<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
+<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+
+<label> 4. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
+<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
+<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
+<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
+<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+
+<label> 5. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
+<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
+<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
+<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
+<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+
+<label> 6. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
+<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
+<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
+<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
+<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+
+
+
+
+<input type="button" value="Gönder" onclick="test()">
+
+</form>
+
+
+<script>
+    
+     function test(){
+        const radioButtons1 = document.querySelectorAll('input[name="s1"]');
+        
+        const radioButtons2 = document.querySelectorAll('input[name="s2"]');
+            for (const radioButton of radioButtons2) {
+                if (radioButton.checked) {
+                   var selectedSize = radioButton.value;
+                    break;
+                }
+            }
+
+    var skor=0;
+    if (radioButtons1[2].checked)
+    {
+        window.alert("1 bildin");
+    skor+=1;
+    }
+    if (radioButtons2[0].checked)
+    {
+        window.alert("2 bildin");
+    skor+=1;
+    }
+document.getElementById("skor1").innerHTML=skor;
+}
+            </script>
+</body>
+
+<script src="script4.js"></script>
+</html>
