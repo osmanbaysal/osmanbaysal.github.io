@@ -1,88 +1,167 @@
 
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ve CSS Testi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+<body>
 
-<body style="padding: 100px;">
+    <div class="question">
+        <p><strong>Soru 1: HTML, hangi programlama dilinin bir alt kümesidir?</strong></p>
+        <input type="radio" name="x1" value="a"> a) picture <br>
+        <input type="radio" name="x1" value="b"> b) image <br>
+        <input type="radio" name="x1" value="c"> c) img <br>
+        <input type="radio" name="x1" value="d"> d) src <br>
+    </div>
 
-<p id="skor1"></p>
-<form>
+    <div class="question">
+        <p><strong>Soru 2: HTML'de bir başlık (başlık etiketi) nasıl oluşturulur? </strong></p>
+        <input type="radio" name="x2" value="a"> a) size <br>
+        <input type="radio" name="x2" value="b"> b) face <br>
+        <input type="radio" name="x2" value="c"> c) color <br>
+        <input type="radio" name="x2" value="d"> d) Hepsi <br>
+    </div>
 
-<label> 1. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
-<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
-<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
-<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
-<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+    <div class="question">
+        <p><strong>Soru 3: HTML'de bir bağlantı (link) oluşturmak için hangi etiket kullanılır? </strong></p>
+        <input type="radio" name="x3" value="a"> a) < font colour="red"> <br>
+        <input type="radio" name="x3" value="b"> b) < font color="red"> <br>
+        <input type="radio" name="x3" value="c"> c) < red>< font> <br>
+        <input type="radio" name="x3" value="d"> d) Hepsi <br>
+    </div>
 
-<label> 2. soru: HTML'de bir başlık (başlık etiketi) nasıl oluşturulur?</label><br>
-<input type="radio" name="s1" id="s1a" value="a"> a) <head> <br>
-<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
-<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
-<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+    <div class="question">
+        <p><strong>Soru 4: HTML'de resim eklemek için hangi etiket kullanılır? </strong></p>
+        <input type="radio" name="x4" value="a"> a) < body color="yellow"> <br>
+        <input type="radio" name="x4" value="b"> b) < body bgcolor="yellow"> <br>
+        <input type="radio" name="x4" value="c"> c) < background>yellow< /background> <br>
+        <input type="radio" name="x4" value="d"> d) < body background="yellow"> </body><br>
+    </div>
 
-<label> 3. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
-<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
-<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
-<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
-<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+    <div class="question">
+        <p><strong>Soru 5: HTML'de bir liste oluşturmak için kullanılan etiketler nelerdir?</strong></p>
+        <input type="radio" name="x5" value="a"> a) border-variable: image url(image.png); <br>
+        <input type="radio" name="x5" value="b"> b) border-image: url(border.png) 30 30 round; <br>
+        <input type="radio" name="x5" value="c"> c) border: url(image.png); <br>
+        <input type="radio" name="x5" value="d"> d) Hiçbiri <br>
+    </div>
 
-<label> 4. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
-<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
-<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
-<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
-<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+    <div class="question">
+        <p><strong>Soru 6: HTML'de bir liste oluşturmak için kullanılan etiketler nelerdir?</strong></p>
+        <input type="radio" name="x6" value="a"> a) border-width <br>
+        <input type="radio" name="x6" value="b"> b) border-size <br>
+        <input type="radio" name="x6" value="c"> c) border-thickness <br>
+        <input type="radio" name="x6" value="d"> d) border-style <br>
+    </div>
 
-<label> 5. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
-<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
-<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
-<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
-<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+    <div class="question">
+        <p><strong>Soru 7: CSS ile bir elementin metin boyutunu belirlemek için hangi özellik kullanılır?</strong></p>
+        <input type="radio" name="x7" value="a"> a)  font-size <br>
+        <input type="radio" name="x7" value="b"> b) text-size <br>
+        <input type="radio" name="x7" value="c"> c) size <br>
+        <input type="radio" name="x7" value="d"> d) text-font <br>
+    </div>
 
-<label> 6. soru: HTML, hangi programlama dilinin bir alt kümesidir?</label><br>
-<input type="radio" name="s1" id="s1a" value="a"> a) Python <br>
-<input type="radio" name="s1" id="s1b"value="b"> b) JavaScript<br>
-<input type="radio" name="s1" id="s1c" value="c"> c) HyperText Markup Language<br>
-<input type="radio" name="s1" id="s1d" value="d"> d) Java<br>
+    <div class="question">
+        <p><strong>Soru 8: CSS ile bir elementin arka plan resmini belirlemek için hangi özellik kullanılır?</strong></p>
+        <input type="radio" name="x8" value="a"> a) background <br>
+        <input type="radio" name="x8" value="b"> b) background-image <br>
+        <input type="radio" name="x8" value="c"> c) image-background <br>
+        <input type="radio" name="x8" value="d"> d) element-background <br>
+    </div>
+
+    <div class="question">
+        <p><strong>Soru 9:  Bir HTML elementine iç kenarlık (padding) eklemek için hangi CSS özelliği kullanılır?</strong></p>
+        <input type="radio" name="x9" value="a"> a) margin <br>
+        <input type="radio" name="x9" value="b"> b) padding <br>
+        <input type="radio" name="x9" value="c"> c) border <br>
+        <input type="radio" name="x9" value="d"> d) spacing <br>
+    </div>
+
+    <div class="question">
+        <p><strong>Soru 10: "CSS Flexbox" özelliği nedir?</strong></p>
+        <input type="radio" name="x10" value="a"> a) Sayfanın genel düzenini belirleyen bir özelliktir. <br>
+        <input type="radio" name="x10" value="b"> b) Bir elementin içeriğini ortalamak için kullanılan bir özelliktir. <br>
+        <input type="radio" name="x10" value="c"> c) Elementlerin sıralanma düzenini ve hizalanmasını kontrol eden bir özelliktir. <br>
+        <input type="radio" name="x10" value="d"> d) Sayfanın arka plan rengini değiştirmek için kullanılan bir özelliktir. <br>
+    </div>
+
+ 
+
+    <div id="result">
+        <button onclick="showResult()">Testi Bitir</button>
+    </div>
+
+    <script>
+        function showResult() {
+            var correctAnswers = 0;
 
 
-
-
-<input type="button" value="Gönder" onclick="test()">
-
-</form>
-
-
-<script>
-    
-     function test(){
-        const radioButtons1 = document.querySelectorAll('input[name="s1"]');
-        
-        const radioButtons2 = document.querySelectorAll('input[name="s2"]');
-            for (const radioButton of radioButtons2) {
-                if (radioButton.checked) {
-                   var selectedSize = radioButton.value;
-                    break;
-                }
+            if (document.querySelector('input[name="x1"]:checked').value === "b") {
+                correctAnswers++;
             }
 
-    var skor=0;
-    if (radioButtons1[2].checked)
-    {
-        window.alert("1 bildin");
-    skor+=1;
-    }
-    if (radioButtons2[0].checked)
-    {
-        window.alert("2 bildin");
-    skor+=1;
-    }
-document.getElementById("skor1").innerHTML=skor;
-}
-            </script>
-</body>
+            if (document.querySelector('input[name="x2"]:checked').value === "d") {
+                correctAnswers++;
+            }
 
-<script src="script4.js"></script>
+            if (document.querySelector('input[name="x3"]:checked').value === "b") {
+                correctAnswers++;
+            }
+
+            if (document.querySelector('input[name="x4"]:checked').value === "b") {
+                correctAnswers++;
+            }
+
+            if (document.querySelector('input[name="x5"]:checked').value === "a") {
+                correctAnswers++;
+            }
+
+            if (document.querySelector('input[name="x6"]:checked').value === "a") {
+                correctAnswers++;
+            }
+
+            if (document.querySelector('input[name="x7"]:checked').value === "a") {
+                correctAnswers++;
+            }
+
+            if (document.querySelector('input[name="x8"]:checked').value === "b") {
+                correctAnswers++;
+            }
+
+            if (document.querySelector('input[name="x9"]:checked').value === "b") {
+                correctAnswers++;
+            }
+
+            if (document.querySelector('input[name="x10"]:checked').value === "c") {
+                correctAnswers++;
+            }
+           
+            var resultElement = document.getElementById("result");
+            resultElement.innerHTML = "Doğru sayınız: " + correctAnswers + "<br>Yanlış sayınız: " + (10 - correctAnswers);
+        }
+    </script>
+
+</body>
 </html>
